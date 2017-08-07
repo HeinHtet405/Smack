@@ -12,6 +12,9 @@
 		EE14057B1F3820B10046432C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE14057A1F3820B10046432C /* ChatVC.swift */; };
 		EE14057D1F3820CF0046432C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE14057C1F3820CF0046432C /* ChannelVC.swift */; };
 		EE14057F1F3827180046432C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE14057E1F3827180046432C /* GradientView.swift */; };
+		EE1405821F3836380046432C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1405811F3836380046432C /* Constants.swift */; };
+		EE1405841F383E7A0046432C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1405831F383E7A0046432C /* LoginVC.swift */; };
+		EE1405861F384EDD0046432C /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1405851F384EDD0046432C /* CreateAccountVC.swift */; };
 		EEFEC1071F38135300496EEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFEC1061F38135300496EEB /* AppDelegate.swift */; };
 		EEFEC10C1F38135300496EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEFEC10A1F38135300496EEB /* Main.storyboard */; };
 		EEFEC10E1F38135300496EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEFEC10D1F38135300496EEB /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 		EE14057A1F3820B10046432C /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		EE14057C1F3820CF0046432C /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		EE14057E1F3827180046432C /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		EE1405811F3836380046432C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE1405831F383E7A0046432C /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EE1405851F384EDD0046432C /* CreateAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		EEFEC1031F38135300496EEB /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFEC1061F38135300496EEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEFEC10B1F38135300496EEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +87,8 @@
 			children = (
 				EE14057A1F3820B10046432C /* ChatVC.swift */,
 				EE14057C1F3820CF0046432C /* ChannelVC.swift */,
+				EE1405831F383E7A0046432C /* LoginVC.swift */,
+				EE1405851F384EDD0046432C /* CreateAccountVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -98,6 +106,14 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		EE1405801F3836160046432C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE1405811F3836380046432C /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		EEFEC0FA1F38135300496EEB = {
@@ -121,6 +137,7 @@
 		EEFEC1051F38135300496EEB /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				EE1405801F3836160046432C /* Utilities */,
 				EE1405791F38208E0046432C /* Model */,
 				EE1405781F3820820046432C /* View */,
 				EE1405771F3820750046432C /* Controller */,
@@ -261,9 +278,12 @@
 			files = (
 				EE14057D1F3820CF0046432C /* ChannelVC.swift in Sources */,
 				EE14057B1F3820B10046432C /* ChatVC.swift in Sources */,
+				EE1405861F384EDD0046432C /* CreateAccountVC.swift in Sources */,
+				EE1405841F383E7A0046432C /* LoginVC.swift in Sources */,
 				EE14057F1F3827180046432C /* GradientView.swift in Sources */,
 				EEFEC1071F38135300496EEB /* AppDelegate.swift in Sources */,
 				EE1405761F381CBA0046432C /* SWRevealViewController.m in Sources */,
+				EE1405821F3836380046432C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
