@@ -69,12 +69,12 @@
 				EE1405731F381CB90046432C /* Smack-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		EEFEC0FA1F38135300496EEB = {
 			isa = PBXGroup;
 			children = (
-				EE1405721F381C510046432C /* Supporting Files */,
 				EEFEC1051F38135300496EEB /* Smack */,
 				EEFEC1041F38135300496EEB /* Products */,
 				2EFBFBEBA7202060AFEB58F5 /* Pods */,
@@ -93,6 +93,7 @@
 		EEFEC1051F38135300496EEB /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				EE1405721F381C510046432C /* Supporting Files */,
 				EEFEC1061F38135300496EEB /* AppDelegate.swift */,
 				EEFEC1081F38135300496EEB /* ViewController.swift */,
 				EEFEC10A1F38135300496EEB /* Main.storyboard */,
