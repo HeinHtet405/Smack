@@ -149,7 +149,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLk-Jf-gwT">
-                                <rect key="frame" x="111" y="593" width="46" height="33"/>
+                                <rect key="frame" x="101" y="593" width="46" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -171,7 +171,7 @@
                             <constraint firstItem="iLk-Jf-gwT" firstAttribute="centerY" secondItem="M9J-mZ-N8Y" secondAttribute="centerY" id="Tin-pS-7LZ"/>
                             <constraint firstItem="M9J-mZ-N8Y" firstAttribute="top" secondItem="lba-k7-trn" secondAttribute="bottom" constant="20" id="UVf-nM-vsh"/>
                             <constraint firstItem="3xz-hu-lRk" firstAttribute="leading" secondItem="bVv-26-Uyw" secondAttribute="leadingMargin" id="Y9G-6N-Pl2"/>
-                            <constraint firstItem="iLk-Jf-gwT" firstAttribute="leading" secondItem="M9J-mZ-N8Y" secondAttribute="trailing" constant="20" id="fh8-0h-7eR"/>
+                            <constraint firstItem="iLk-Jf-gwT" firstAttribute="leading" secondItem="M9J-mZ-N8Y" secondAttribute="trailing" constant="10" id="fh8-0h-7eR"/>
                             <constraint firstItem="t2J-LT-7zk" firstAttribute="leading" secondItem="bVv-26-Uyw" secondAttribute="leadingMargin" id="kal-pU-lKg"/>
                             <constraint firstItem="lba-k7-trn" firstAttribute="leading" secondItem="bVv-26-Uyw" secondAttribute="leading" id="rTj-Hd-nn6"/>
                             <constraint firstItem="6e4-Kf-tCs" firstAttribute="top" secondItem="M9J-mZ-N8Y" secondAttribute="bottom" constant="20" id="vFC-lv-ZbL"/>
