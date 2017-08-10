@@ -25,6 +25,18 @@ class ChannelVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         
         // Listener (Like Broadcast Reciever)
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        
+        MessageService.instance.findAllChannel { (success) in
+            if success {
+                self.tableView.reloadData()
+            }
+        }
+        
+        SocketService.instance.getChannel { (success) in
+            if success {
+                self.tableView.reloadData()
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -58,6 +70,12 @@ class ChannelVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         }
     }
     
+    
+    @IBAction func addChannelBtnPressed(_ sender: Any) {
+        let addChannel = AddChannelVC()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
