@@ -296,7 +296,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="pR4-vY-67s" eventType="touchUpInside" id="kTq-iv-sOX"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cOC-g1-Srs">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -304,15 +311,20 @@
                             <constraint firstItem="EdF-Lb-t7I" firstAttribute="centerX" secondItem="r6t-pu-ErG" secondAttribute="centerX" id="1kz-R8-tvy"/>
                             <constraint firstItem="f6b-uz-AJM" firstAttribute="top" secondItem="WZ9-aK-tbL" secondAttribute="bottom" constant="8" id="6jy-7M-y40"/>
                             <constraint firstAttribute="trailingMargin" secondItem="f6b-uz-AJM" secondAttribute="trailing" id="AbZ-5v-bnC"/>
+                            <constraint firstItem="cOC-g1-Srs" firstAttribute="centerX" secondItem="r6t-pu-ErG" secondAttribute="centerX" id="CPF-5V-Fa4"/>
                             <constraint firstItem="1VD-0f-8ki" firstAttribute="centerX" secondItem="r6t-pu-ErG" secondAttribute="centerX" id="Jsi-GG-Uq2"/>
                             <constraint firstItem="1VD-0f-8ki" firstAttribute="top" secondItem="EdF-Lb-t7I" secondAttribute="bottom" constant="40" id="Qk2-82-glt"/>
                             <constraint firstItem="jzY-6v-Vll" firstAttribute="top" secondItem="dHs-TD-HyO" secondAttribute="bottom" id="Taw-eg-6F3"/>
                             <constraint firstItem="dHs-TD-HyO" firstAttribute="centerX" secondItem="r6t-pu-ErG" secondAttribute="centerX" id="YCH-Uc-qB9"/>
                             <constraint firstItem="jzY-6v-Vll" firstAttribute="centerX" secondItem="r6t-pu-ErG" secondAttribute="centerX" id="eyg-cS-qtz"/>
                             <constraint firstItem="dHs-TD-HyO" firstAttribute="top" secondItem="1VD-0f-8ki" secondAttribute="bottom" constant="40" id="gZM-RT-wWB"/>
+                            <constraint firstItem="cOC-g1-Srs" firstAttribute="centerY" secondItem="r6t-pu-ErG" secondAttribute="centerY" constant="-100" id="t7R-Dj-9wz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passTextField" destination="7jy-0M-WUp" id="hQ8-Hc-4lE"/>
+                        <outlet property="spinner" destination="cOC-g1-Srs" id="on5-a6-swZ"/>
+                        <outlet property="userNameTextField" destination="a5B-5n-LKl" id="n3P-aR-Fta"/>
                         <segue destination="B26-Yq-dzI" kind="show" identifier="toCreateAccount" id="wE1-f6-z4q"/>
                     </connections>
                 </viewController>
