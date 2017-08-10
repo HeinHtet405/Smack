@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D0E13A4294EFDE56A9EE30C1 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790B4B1A4C51D5856D7D7ED8 /* Pods_Smack.framework */; };
+		EE00162A1F3C168C0041F23A /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0016291F3C168C0041F23A /* MessageService.swift */; };
+		EE00162C1F3C16BF0041F23A /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE00162B1F3C16BF0041F23A /* Channel.swift */; };
+		EE00162E1F3C1C380041F23A /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE00162D1F3C1C380041F23A /* ChannelCell.swift */; };
 		EE1405761F381CBA0046432C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1405751F381CBA0046432C /* SWRevealViewController.m */; };
 		EE14057B1F3820B10046432C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE14057A1F3820B10046432C /* ChatVC.swift */; };
 		EE14057D1F3820CF0046432C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE14057C1F3820CF0046432C /* ChannelVC.swift */; };
@@ -33,6 +36,9 @@
 		790B4B1A4C51D5856D7D7ED8 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E6846A6F8162A5195B54A8 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		EDACA6E272C0F5A6896C7008 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
+		EE0016291F3C168C0041F23A /* MessageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		EE00162B1F3C16BF0041F23A /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		EE00162D1F3C1C380041F23A /* ChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		EE1405731F381CB90046432C /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		EE1405741F381CBA0046432C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		EE1405751F381CBA0046432C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 				EE14058A1F386B0D0046432C /* RoundedButton.swift */,
 				EEC040241F3AC5F000E5B189 /* AvatarCell.swift */,
 				EEA825821F3AEC55001492DC /* CircleImage.swift */,
+				EE00162D1F3C1C380041F23A /* ChannelCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 		EE1405791F38208E0046432C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE00162B1F3C16BF0041F23A /* Channel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -142,6 +150,7 @@
 			children = (
 				EE1405881F3860FA0046432C /* AuthService.swift */,
 				EE1B602A1F3995650035445A /* UserDataService.swift */,
+				EE0016291F3C168C0041F23A /* MessageService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -318,10 +327,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA825861F3B0B93001492DC /* ProfileVC.swift in Sources */,
+				EE00162E1F3C1C380041F23A /* ChannelCell.swift in Sources */,
 				EE14057D1F3820CF0046432C /* ChannelVC.swift in Sources */,
 				EEC040231F3AC3B800E5B189 /* AvatarPickerVC.swift in Sources */,
 				EE14058B1F386B0D0046432C /* RoundedButton.swift in Sources */,
+				EE00162C1F3C16BF0041F23A /* Channel.swift in Sources */,
 				EEA825831F3AEC55001492DC /* CircleImage.swift in Sources */,
+				EE00162A1F3C168C0041F23A /* MessageService.swift in Sources */,
 				EE14057B1F3820B10046432C /* ChatVC.swift in Sources */,
 				EE1B602B1F3995650035445A /* UserDataService.swift in Sources */,
 				EE1405861F384EDD0046432C /* CreateAccountVC.swift in Sources */,
