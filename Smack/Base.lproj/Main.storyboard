@@ -78,6 +78,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="sendMessageField:" destination="4Vw-g1-kIQ" eventType="editingChanged" id="i4k-sR-8r7"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yy1-vx-Hm4">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
@@ -117,7 +120,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNc-SE-xkZ">
-                                                    <rect key="frame" x="70" y="36" width="285" height="20.5"/>
+                                                    <rect key="frame" x="70" y="36" width="285" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -166,12 +169,13 @@
                         <outlet property="channelNameLabel" destination="Hdl-Kf-Lip" id="Nzk-dR-Ish"/>
                         <outlet property="menuBtn" destination="cp8-ct-0wi" id="Rjx-Ar-UOo"/>
                         <outlet property="messageTextField" destination="yC9-Hh-bdJ" id="jWE-hk-gkM"/>
+                        <outlet property="sendBtn" destination="Yy1-vx-Hm4" id="MQK-AC-fK2"/>
                         <outlet property="tableView" destination="Ase-O4-4WX" id="Otm-f3-F4R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZ6-eU-9su" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="816.79999999999995" y="466.41679160419795"/>
+            <point key="canvasLocation" x="849" y="466"/>
         </scene>
         <!--ChannelVC-->
         <scene sceneID="eki-Q7-pAn">
