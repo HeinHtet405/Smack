@@ -89,6 +89,12 @@
                                     <action selector="sendMessageBtnPressed:" destination="4Vw-g1-kIQ" eventType="touchUpInside" id="8AC-7U-w11"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grC-dN-FDs">
+                                <rect key="frame" x="8" y="610.5" width="34.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-O4-4WX">
                                 <rect key="frame" x="0.0" y="77" width="375" height="530"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -97,7 +103,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gbs-jj-5YF" id="Tx4-xh-m69">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-7n-Swx" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
@@ -162,7 +168,9 @@
                             <constraint firstItem="yC9-Hh-bdJ" firstAttribute="top" secondItem="Ase-O4-4WX" secondAttribute="bottom" constant="20" id="m35-4Y-Abs"/>
                             <constraint firstItem="Ase-O4-4WX" firstAttribute="leading" secondItem="v75-1y-MHQ" secondAttribute="leading" id="n9o-4P-1ni"/>
                             <constraint firstItem="yC9-Hh-bdJ" firstAttribute="leading" secondItem="v75-1y-MHQ" secondAttribute="leading" id="oPf-aB-qCe"/>
+                            <constraint firstItem="grC-dN-FDs" firstAttribute="leading" secondItem="v75-1y-MHQ" secondAttribute="leading" constant="8" id="p5L-Qu-qZz"/>
                             <constraint firstItem="Ase-O4-4WX" firstAttribute="top" secondItem="Ba5-Q2-9ec" secondAttribute="bottom" id="sNW-wK-vyV"/>
+                            <constraint firstItem="yqq-kp-vtm" firstAttribute="top" secondItem="grC-dN-FDs" secondAttribute="bottom" constant="40" id="wDg-an-6n3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -171,6 +179,7 @@
                         <outlet property="messageTextField" destination="yC9-Hh-bdJ" id="jWE-hk-gkM"/>
                         <outlet property="sendBtn" destination="Yy1-vx-Hm4" id="MQK-AC-fK2"/>
                         <outlet property="tableView" destination="Ase-O4-4WX" id="Otm-f3-F4R"/>
+                        <outlet property="typingUserLabel" destination="grC-dN-FDs" id="qqw-KS-hH2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZ6-eU-9su" userLabel="First Responder" sceneMemberID="firstResponder"/>
