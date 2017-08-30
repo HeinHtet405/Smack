@@ -138,7 +138,6 @@ class ChatVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             }
             guard let message = messageTextField.text else { return
             }
-            
             SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId, completion: { (success) in
                 if success {
                     self.messageTextField.text = ""
